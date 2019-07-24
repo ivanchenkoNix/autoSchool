@@ -6,10 +6,10 @@ import java.io.InputStreamReader;
 public class ArraysTask {
 
     public static void main(String[] args) throws IOException, Exception {
-//        max(initializeArray());
-//        task2();
-//        task3();
-//        task4();
+        max(initializeArray());
+        task2();
+        task3();
+        task4();
         task5();
 
     }
