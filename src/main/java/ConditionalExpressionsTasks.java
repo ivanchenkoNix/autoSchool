@@ -10,7 +10,14 @@ public class ConditionalExpressionsTasks {
 //        task3(5);
 //        task4(enterString(),enterString());
 //        task5(enterString(), enterNumber());
-        task6(enterString(),enterNumber());
+//        task6(enterString(), enterNumber());.
+//        task7();
+//        task8();
+//        task9();
+//        task10(enterString(),enterNumber());
+//        task11();
+        task12();
+
     }
 
     private static void task1(int a, int b) {
@@ -90,6 +97,82 @@ public class ConditionalExpressionsTasks {
         for (int i = 0; i < arrayLength; i++)
             intarray[i] = enterNumber();
         System.out.println(Arrays.stream(intarray).max(Integer::compare).get() + "это макимум ");
+    }
+
+    private static void task7() throws Exception {
+        int select = randomNumber();
+        int userNumber = 0;
+        for (int i = 0; i < 7; i++) {
+            userNumber = enterNumber();
+            if (select > userNumber)
+                System.out.println("Мало");
+            else if (select < userNumber)
+                System.out.println("Много");
+            else {
+                System.out.println("Угадал :)");
+                break;
+            }
+        }
+        if (select != userNumber)
+            System.out.println("Не угадал :(");
+    }
+
+    private static void task8() {
+        int count = 1;
+        while (count <= 10) {
+            System.out.println(count);
+            count++;
+        }
+    }
+
+    private static void task9() {
+        int count = 10;
+        while (count >= 1) {
+            System.out.println(count);
+            count--;
+        }
+    }
+
+    private static void task10(String string, int number) {
+        int repeats = 0;
+        while (repeats != number) {
+            System.out.println(string);
+            repeats++;
+        }
+    }
+
+    private static void task11() {
+        int x = 0;
+        int y = 0;
+        while (y != 10) {
+            System.out.println("");
+            while (x != 10) {
+                System.out.print("S");
+                x++;
+            }
+            x = 0;
+            y++;
+        }
+    }
+
+    private static void task12() {
+        int number = 1;
+        int multiplier = 1;
+        while (number <= 10){
+            while (multiplier <= 10) {
+                System.out.print(number * multiplier+"\t");
+                multiplier++;
+            }
+            System.out.print("\n");
+            number++;
+            multiplier=1;
+        }
+    }
+
+
+    private static int randomNumber() {
+        Random random = new Random();
+        return random.nextInt(20 + 1);
     }
 
 
