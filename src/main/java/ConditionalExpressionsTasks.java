@@ -16,7 +16,13 @@ public class ConditionalExpressionsTasks {
 //        task9();
 //        task10(enterString(),enterNumber());
 //        task11();
-        task12();
+//        task12();
+//        task13();
+//        task14(enterNumber(), enterNumber());
+//        task15();
+//        task16();
+//        task17(enterString());
+        task18();
 
     }
 
@@ -158,17 +164,66 @@ public class ConditionalExpressionsTasks {
     private static void task12() {
         int number = 1;
         int multiplier = 1;
-        while (number <= 10){
+        while (number <= 10) {
             while (multiplier <= 10) {
-                System.out.print(number * multiplier+"\t");
+                System.out.print(number * multiplier + "\t");
                 multiplier++;
             }
             System.out.print("\n");
             number++;
-            multiplier=1;
+            multiplier = 1;
         }
     }
 
+    private static void task13() {
+        for (int i = 2; i < 100; i += 2) {
+            System.out.println(i);
+        }
+    }
+
+    private static void task14(int m, int n) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print(8);
+            }
+            System.out.println("");
+        }
+    }
+
+    private static void task15() {
+        int count = 0;
+        for (int j = 0; j < 10; j++) {
+            for (int i = 0; i <= count; i++) {
+                System.out.print(8);
+            }
+            System.out.println("");
+            count++;
+        }
+    }
+
+    private static void task16() {
+        for (int i = 0; i <= 10; i ++){
+            for (int j = 0; j <= 9; j++) {
+                if (i == 10 || j==0)
+                    System.out.print(8);
+            }
+        System.out.println("");
+        }
+
+    }
+
+    private static void task17(String name) {
+        for (int i = 0; i < 10; i++)
+            System.out.println(name + " любит меня.");
+    }
+
+    private static void task18() throws InterruptedException {
+    for (int i = 30; i >= 0; i--){
+        System.out.println(i);
+        Thread.sleep(100);
+    }
+    System.out.println("Boom!");
+    }
 
     private static int randomNumber() {
         Random random = new Random();
