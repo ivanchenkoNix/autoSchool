@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class FinalTaskClass2 {
 
-    public static void main(String[] args) throws ArithmeticException, InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
 
         try {
             max(initializeArray());
