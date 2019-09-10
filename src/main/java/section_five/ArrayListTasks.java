@@ -1,6 +1,7 @@
-package section5;
+package section_five;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Random;
@@ -9,7 +10,7 @@ public class ArrayListTasks {
 
     private static Random random = new Random();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
 //        task7();
 //        task8();
 //        task9();
@@ -28,7 +29,7 @@ public class ArrayListTasks {
         }
     }
 
-    public static void task8() throws Exception {
+    public static void task8() throws IOException {
         ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             list.add(enterString());
@@ -41,7 +42,6 @@ public class ArrayListTasks {
                 maxlength = list.get(i).length();
                 longest.add(list.get(i));
             } else if (list.get(i).length() == maxlength) {
-                maxlength = list.get(i).length();
                 longest.add(list.get(i));
             }
         }
@@ -50,7 +50,7 @@ public class ArrayListTasks {
         }
     }
 
-    public static void task9() throws Exception {
+    public static void task9() throws IOException {
         ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             list.add(enterString());
@@ -63,7 +63,6 @@ public class ArrayListTasks {
                 minlength = list.get(i).length();
                 shortest.add(list.get(i));
             } else if (list.get(i).length() == minlength) {
-                minlength = list.get(i).length();
                 shortest.add(list.get(i));
             }
         }
@@ -72,7 +71,7 @@ public class ArrayListTasks {
         }
     }
 
-    public static void task10() throws Exception {
+    public static void task10() throws IOException {
         ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             list.add(0, enterString());
@@ -83,7 +82,7 @@ public class ArrayListTasks {
         }
     }
 
-    public static void task11() throws Exception {
+    public static void task11() throws IOException {
         ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             list.add(enterString());
@@ -110,7 +109,7 @@ public class ArrayListTasks {
     }
 
 
-    private static String enterString() throws Exception {
+    private static String enterString() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         return reader.readLine();
     }

@@ -1,4 +1,4 @@
-package section5;
+package section_five;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,7 @@ public class StreamTask {
         list.add("");
         list.add("");
 
-        list.stream().filter(entry -> entry.length() != 0 & !entry.contains("d")).sorted().forEach((entry)
+        list.stream().filter(entry -> entry.length() != 0 && !entry.contains("d")).sorted().forEach(entry
                 -> System.out.println(String.format("%s length %d", entry, entry.length())));
     }
 

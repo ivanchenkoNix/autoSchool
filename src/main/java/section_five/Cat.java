@@ -1,4 +1,4 @@
-package section5;
+package section_five;
 
 public class Cat {
 

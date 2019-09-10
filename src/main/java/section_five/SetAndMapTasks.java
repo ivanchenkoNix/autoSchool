@@ -1,4 +1,4 @@
-package section5;
+package section_five;
 
 import java.time.LocalDate;
 import java.util.*;
@@ -10,7 +10,7 @@ public class SetAndMapTasks {
 //        task12();
 //        task13();
 //        task14();
-//        task15();
+        task15();
 //        task16();
         task17();
     }
@@ -70,7 +70,7 @@ public class SetAndMapTasks {
         Map<String, LocalDate> updated = new HashMap<>();
 
         map.forEach((key, value) -> {
-            if (value.getMonthValue() > 8 | value.getMonthValue() < 6) {
+            if (value.getMonthValue() > 8 || value.getMonthValue() < 6) {
                 updated.put(key, value);
             }
         });
