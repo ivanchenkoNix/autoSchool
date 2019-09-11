@@ -1,3 +1,5 @@
+package section_two;
+
 import java.util.Scanner;
 
 public class SimpleDataTypesTask {
