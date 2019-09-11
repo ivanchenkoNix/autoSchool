@@ -28,7 +28,7 @@ public class FinalTaskClass1 {
                 int zero = 5 / 0;
                 Thread.sleep(300);
             } catch (Exception e) {
-                 System.out.println("You shall not fall");
+                System.out.println("You shall not fall");
             }
         }
 

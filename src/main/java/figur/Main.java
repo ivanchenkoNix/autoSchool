@@ -16,8 +16,8 @@ public class Main {
 
         Figur[] sorted = stream(figureArray).sorted(Comparator.comparing(Figur::area)).toArray(Figur[]::new);
 
-        for (Figur figur:sorted) {
-            System.out.println("Area:\t"+figur.area() + "\tName:\t"+ figur.getName());
+        for (Figur figur : sorted) {
+            System.out.println("Area:\t" + figur.area() + "\tName:\t" + figur.getName());
         }
     }
 }

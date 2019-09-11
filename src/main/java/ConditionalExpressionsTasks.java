@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.*;
-import java.util.stream.Stream;
+import java.util.Arrays;
+import java.util.Random;
 
 public class ConditionalExpressionsTasks {
     public static void main(String[] args) throws Exception {
@@ -202,12 +202,12 @@ public class ConditionalExpressionsTasks {
     }
 
     private static void task16() {
-        for (int i = 0; i <= 10; i ++){
+        for (int i = 0; i <= 10; i++) {
             for (int j = 0; j <= 9; j++) {
-                if (i == 10 || j==0)
+                if (i == 10 || j == 0)
                     System.out.print(8);
             }
-        System.out.println("");
+            System.out.println("");
         }
 
     }
@@ -218,11 +218,11 @@ public class ConditionalExpressionsTasks {
     }
 
     private static void task18() throws InterruptedException {
-    for (int i = 30; i >= 0; i--){
-        System.out.println(i);
-        Thread.sleep(100);
-    }
-    System.out.println("Boom!");
+        for (int i = 30; i >= 0; i--) {
+            System.out.println(i);
+            Thread.sleep(100);
+        }
+        System.out.println("Boom!");
     }
 
     private static int randomNumber() {

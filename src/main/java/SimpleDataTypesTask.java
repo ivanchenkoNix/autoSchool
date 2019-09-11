@@ -11,6 +11,6 @@ public class SimpleDataTypesTask {
     static void printHelloName() {
         Scanner scanner = new Scanner(System.in);
         String username = scanner.nextLine();
-        System.out.println("Hello, "+ username);
+        System.out.println("Hello, " + username);
     }
 }

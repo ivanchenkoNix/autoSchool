@@ -58,62 +58,60 @@ public class HashSetTasks {
 
     public static void task3() {
 
-        HashMap<String,Cat> catHashMap = new HashMap<>();
+        HashMap<String, Cat> catHashMap = new HashMap<>();
         Cat cat1 = new Cat("Vasya");
         Cat cat2 = new Cat("bob");
         Cat cat3 = new Cat("Alex");
         Cat cat4 = new Cat("Abdul");
-        Cat cat5 = new Cat ("Yenifer");
+        Cat cat5 = new Cat("Yenifer");
 
-        catHashMap.put(cat1.getName(),cat1);
-        catHashMap.put(cat2.getName(),cat2);
-        catHashMap.put(cat3.getName(),cat3);
-        catHashMap.put(cat4.getName(),cat4);
-        catHashMap.put(cat5.getName(),cat5);
+        catHashMap.put(cat1.getName(), cat1);
+        catHashMap.put(cat2.getName(), cat2);
+        catHashMap.put(cat3.getName(), cat3);
+        catHashMap.put(cat4.getName(), cat4);
+        catHashMap.put(cat5.getName(), cat5);
 
-        for (Map.Entry<String, Cat> map : catHashMap.entrySet())
-        {
-            System.out.println(String.format("Name %s of object %s",map.getKey(),map.getValue()));
+        for (Map.Entry<String, Cat> map : catHashMap.entrySet()) {
+            System.out.println(String.format("Name %s of object %s", map.getKey(), map.getValue()));
         }
 
     }
 
     public static void task4and5() {
 
-        HashMap<String,String> hashMap = new HashMap<>();
+        HashMap<String, String> hashMap = new HashMap<>();
 
-        for (int i = 0; i <10; i++){
-            hashMap.put(getRandomString(),getRandomString());
+        for (int i = 0; i < 10; i++) {
+            hashMap.put(getRandomString(), getRandomString());
         }
 
-        for (Map.Entry<String, String> map : hashMap.entrySet()){
-            System.out.println("Key\t"+map.getKey() + "\tValue\t" + map.getValue());
+        for (Map.Entry<String, String> map : hashMap.entrySet()) {
+            System.out.println("Key\t" + map.getKey() + "\tValue\t" + map.getValue());
         }
     }
 
     public static void task6() {
-        HashMap<String,Cat> catHashMap = new HashMap<>();
+        HashMap<String, Cat> catHashMap = new HashMap<>();
 
-        Cat cat1 = new Cat("Vasya",12);
-        Cat cat2 = new Cat("bob",5);
-        Cat cat3 = new Cat("Alex",3);
-        Cat cat4 = new Cat("Abdul",11);
-        Cat cat5 = new Cat ("Yenifer",14);
+        Cat cat1 = new Cat("Vasya", 12);
+        Cat cat2 = new Cat("bob", 5);
+        Cat cat3 = new Cat("Alex", 3);
+        Cat cat4 = new Cat("Abdul", 11);
+        Cat cat5 = new Cat("Yenifer", 14);
 
-        catHashMap.put(cat1.getName(),cat1);
-        catHashMap.put(cat2.getName(),cat2);
-        catHashMap.put(cat3.getName(),cat3);
-        catHashMap.put(cat4.getName(),cat4);
-        catHashMap.put(cat5.getName(),cat5);
+        catHashMap.put(cat1.getName(), cat1);
+        catHashMap.put(cat2.getName(), cat2);
+        catHashMap.put(cat3.getName(), cat3);
+        catHashMap.put(cat4.getName(), cat4);
+        catHashMap.put(cat5.getName(), cat5);
 
-        for (Map.Entry<String, Cat> map: catHashMap.entrySet())
-        {
-            System.out.println(String.format("key is %s and age is %d ",map.getKey(),map.getValue().getAge()));
+        for (Map.Entry<String, Cat> map : catHashMap.entrySet()) {
+            System.out.println(String.format("key is %s and age is %d ", map.getKey(), map.getValue().getAge()));
 
         }
     }
 
-     static String getRandomString() {
+    static String getRandomString() {
         String string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
 
         char[] text = new char[10];

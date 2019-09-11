@@ -76,10 +76,10 @@ public class ArraysTask {
             numbers[i] = Integer.parseInt(s);
         }
 
-        for (int i = 0; i < numbers.length/2; i++){
+        for (int i = 0; i < numbers.length / 2; i++) {
             int buffer = numbers[i];
-            numbers[i] = numbers[numbers.length - i -1];
-            numbers[numbers.length - i -1] = buffer;
+            numbers[i] = numbers[numbers.length - i - 1];
+            numbers[numbers.length - i - 1] = buffer;
         }
 
         for (Integer integer : numbers) {
@@ -102,7 +102,7 @@ public class ArraysTask {
 
         for (int i = 0; i < small1.length; i++) {
             small1[i] = large[i];
-            small2[i] = large[i+large.length/2];
+            small2[i] = large[i + large.length / 2];
         }
         for (Integer integer : small2) {
             System.out.println(integer);

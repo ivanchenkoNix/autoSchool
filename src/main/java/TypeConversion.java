@@ -15,12 +15,12 @@ public class TypeConversion {
 
     private static void task2() {
         int n = 49;
-        System.out.println(n/10%10 + n%10);
+        System.out.println(n / 10 % 10 + n % 10);
     }
 
     private static void task3() {
         double n = 32.13;
-        System.out.println((int)(n+0.5));
+        System.out.println((int) (n + 0.5));
     }
 
     private static void task4() {

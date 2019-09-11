@@ -10,7 +10,7 @@ public class Factory {
         }
         if (figuresList.equals(FiguresList.CIRCLE))
             return new Circle(randomsHelper.getRandomInt(12), randomsHelper.getRandomInt(12)
-                    , randomsHelper.getRandomString(), randomsHelper.getRandomDouble(1,15));
+                    , randomsHelper.getRandomString(), randomsHelper.getRandomDouble(1, 15));
         else if (figuresList.equals(FiguresList.SQUARE))
             return new Square(randomsHelper.getRandomInt(12), randomsHelper.getRandomInt(12)
                     , randomsHelper.getRandomString(), randomsHelper.getRandomDouble(1, 15)

@@ -118,7 +118,7 @@ public class SetAndMapTasks {
         map.put("Vasya", "Ivan");
         map.put("Serg", "Hood");
 
-        map.forEach((key,value)-> System.out.println(key + "\t" + value));
+        map.forEach((key, value) -> System.out.println(key + "\t" + value));
     }
 
     static String getRandomString() {
