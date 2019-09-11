@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 
 public class ArraysTask {
 
-    public static void main(String[] args) throws IOException, Exception {
+    public static void main(String[] args) throws IOException {
         max(initializeArray());
         task2();
         task3();
@@ -34,7 +34,7 @@ public class ArraysTask {
         System.out.println("Max number is: " + max);
     }
 
-    private static void task2() throws Exception {
+    private static void task2() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         String[] list = new String[10];
@@ -48,7 +48,7 @@ public class ArraysTask {
         }
     }
 
-    private static void task3() throws Exception {
+    private static void task3() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         String[] list = new String[10];
@@ -65,7 +65,7 @@ public class ArraysTask {
         }
     }
 
-    private static void task4() throws Exception {
+    private static void task4() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         Integer[] numbers = new Integer[10];
@@ -87,7 +87,7 @@ public class ArraysTask {
         }
     }
 
-    private static void task5() throws Exception {
+    private static void task5() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         Integer[] large = new Integer[20];
